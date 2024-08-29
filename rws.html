@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height:100px;
+            background-color: grey;
+            gap:10px;
+            padding: 20px;
+            color: lightcoral;
+            text-shadow: 2px 2px 4px red;
+        }
+        .head{
+            display: flex;
+            gap: 20px;
+        }
+        .august{
+            width: 100px;
+        }
+        .humberg{
+            width: 50px;
+        }
+        #checkbox,.humberg{
+            display: none;
+        }
+    
+     #checkbox:checked ~ .nav_1{
+        display: block;
+     }
+        .nav_1{
+            width: 100px;
+            height: 200px;
+            border-radius:10px 0px;
+            background-color: blueviolet;
+           position: absolute;
+           top: 100px;
+           right: 0px;
+           display: none;
+           
+        }
+        .nav_1>div{
+            padding: 15px;
+            text-shadow: 2px 2px 4px red;
+        }
+        @media screen and (max-width:412px) {
+            .head{
+                display:none
+            }
+            .humberg{
+                display: block;
+            }
+            
+        }
+        @media screen and (min-width:412px) {
+           .nav_1{
+            position: absolute;
+            right: -300px;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="" class="august">
+        </div>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox"><img src="" class="humberg"></label>
+        <div class="head">
+       <div class="class2">Home</div>
+        <div class="class3">Contact us</div>
+        <div class="class4">About</div>
+        <div class="class5">Email us</div>
+        </div>
+    <div class="nav_1">
+        <div>Home</div>
+        <div>Contact us</div>
+        <div>About</div>
+        <div>Email us</div>
+    </div>
+    </div>
+</body>
+</html>
