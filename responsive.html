@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            width: 100%;
+            height: 90px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+            position: fixed;
+            top: 0%;
+            z-index: 3;
+            text-shadow: 2px 2px 4px red;
+        }
+        header>div{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        body{
+            margin: 0px;
+            border: 0px;
+            display: flex;
+            justify-content: center;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .main_container{
+            width: 1500px;
+            height:1700px;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .class1{
+            width:95%;
+            height:800px;
+            background-color: white;
+            position: relative;
+            text-shadow: 2px 2px 4px red;
+        }
+        .class1>div{
+            display: inline-block;
+            position: absolute;
+            left: 40%;
+            top: 50%;
+            z-index: 2;
+        }
+        .middle{
+            width: auto;
+            background-color: gray;
+            color: antiquewhite;
+            margin: 5px;
+            padding: 5px;
+            font-size: 2.5rem;
+        }
+        .middle1{
+            width: auto;
+            color: antiquewhite;
+            margin: 5px;
+            padding: 5px;
+            font-size: 2.5rem;
+        }
+        .class2{
+            width:95%;
+            height: 100px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+        }
+        .class3{
+            width:95%;
+            height:600px;
+            background-color: white;
+
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+      .item{
+        position: relative;
+        width:100%;
+        height: 300px;
+        margin-top:10px;
+      }
+       .item>div{
+        position: absolute;
+        left: 0%;
+        z-index: 2;
+        display: inline-block;
+        background-color: black;
+        color: beige;
+        width: fit-content;
+        padding: 3px;
+       }
+       @media screen and (min-width:410px) {
+        .class3{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(4,300px);
+            gap:10px;
+        }
+        }
+       
+    @media screen and (min-width:920px) {
+        .class3{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,300px);
+            gap:10px;
+        }
+        }
+        @media screen and (max-width:410px){
+            section{
+                display: none;
+            }
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="main_container">
+        <header>
+            <div>10k coders</div>
+            <div>
+                <section>Home</section>
+            <section>Contact</section>
+            <section>Email</section>
+            <section>Projects</section>
+        </div>
+        </header>
+        <div class="class1"><img src="" alt=""><div><span class="middle">10k</span><span class="middle1">coders</span></div></div>
+        <div class="class2"><div><h1>Projects</h1></div></div>
+        <div class="class3">
+        <div class="item item1"><img src="" alt=""><div>Spicy Food</div></div>
+        <div class="item item2"><img src="" alt=""><div>Spicy Food</div></div>
+        <div class="item item3"><img src="" alt=""><div>Spicy Food</div></div>
+        <div class="item item4"><img src="" alt=""><div>Spicy Food</div></div>
+        <div class="item item5"><img src="" alt=""><div>Spicy Food </div></div>
+        <div class="item item6"><img src="" alt=""><div>Spicy Food</div></div>
+        <div class="item item7"><img src="" alt=""><div>Spicy Food</div></div>
+        <div class="item item8"><img src="" alt=""><div>Spicy Food</div></div>
+    </div>
+    </div>
+</body>
+</html>
